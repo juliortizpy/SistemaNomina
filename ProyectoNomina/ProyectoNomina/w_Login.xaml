@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ProyectoNomina"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="ProyectoNomina.Login"
         mc:Ignorable="d"
-        Title="Login" Height="300" Width="300" mah:ControlsHelper.ContentCharacterCasing="Upper" >
+        Title="Login" Height="300" Width="300" mah:ControlsHelper.ContentCharacterCasing="Upper" WindowStyle="None" >
 
 
     <Grid>
