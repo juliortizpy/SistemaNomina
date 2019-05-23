@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:ProyectoNomina"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="ProyectoNomina.Login"
         mc:Ignorable="d"
-        Title="Login" Height="300" Width="300" mah:ControlsHelper.ContentCharacterCasing="Upper" WindowStyle="None" >
+        Title="Login" Height="300" Width="300"  WindowStyle="None" >
 
 
     <Grid>
-        <Label x:Name="lblUsuario" Content="Usuario" HorizontalAlignment="Left" Margin="64,94,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblUsuario" Content="Usuario" HorizontalAlignment="Left" Margin="64,92,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblContraseña" Content="Contraseña" HorizontalAlignment="Left" Margin="64,134,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnIngresar" Content="Ingresar" HorizontalAlignment="Left" Margin="82,176,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="162,176,0,0" VerticalAlignment="Top" Width="75"/>
