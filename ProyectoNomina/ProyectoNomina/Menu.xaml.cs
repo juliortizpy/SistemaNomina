@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Clasewpf
+namespace ProyectoNomina
 {
     /// <summary>
     /// Lógica de interacción para Menu.xaml
@@ -23,11 +23,15 @@ namespace Clasewpf
         {
             InitializeComponent();
         }
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void MenuEmpleados_Click(object sender, RoutedEventArgs e)
         {
-            w_Artesania laVentana = new w_Artesania();
-            laVentana.ShowDialog();
+            w_Empleados ventanaEmpleado = new w_Empleados();
+            ventanaEmpleado.ShowDialog();
+        }
+
+        private void MenuSalir_Click(object sender, RoutedEventArgs e)
+        {
+                this.Close();          
         }
     }
 }
