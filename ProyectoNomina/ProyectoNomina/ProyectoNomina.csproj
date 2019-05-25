@@ -151,21 +151,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Modelo.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Modelo.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modelo.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Modelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modelo.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Modelo.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Permisos.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -214,19 +199,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Modelo.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Modelo.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
-    </None>
-    <None Include="Modelo.edmx.diagram">
-      <DependentUpon>Modelo.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -248,16 +226,6 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
-    <Content Include="Modelo.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Modelo.edmx</DependentUpon>
-      <LastGenOutput>Modelo.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Modelo.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Modelo.edmx</DependentUpon>
-      <LastGenOutput>Modelo.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

@@ -21,12 +21,12 @@ namespace ProyectoNomina
     {
 
         //Creamos el objeto 
-        NominaEntities datos;
+        NominaEntities1 datos;
         public Permisos()
         {
             InitializeComponent();
             //Se instancia el objeto conexion
-            datos = new NominaEntities();
+            datos = new NominaEntities1();
         }
 
         private void CargarPermisos()

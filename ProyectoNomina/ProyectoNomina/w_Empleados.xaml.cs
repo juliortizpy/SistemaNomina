@@ -20,11 +20,11 @@ namespace ProyectoNomina
     /// </summary>
     public partial class w_Empleados : Window
     {
-        NominaEntities datos;
+        NominaEntities1 datos;
         public w_Empleados()
         {
             InitializeComponent();
-            datos = new NominaEntities();
+            datos = new NominaEntities1();
         }
 
         public void CargarGrillaEmpleados()
