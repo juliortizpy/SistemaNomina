@@ -119,7 +119,7 @@ namespace ProyectoNomina
         }
 
         private void BtnGuardar_Click(object sender, RoutedEventArgs e)
-        {
+        { 
             Empleado emple = new Empleado();
             emple.Nombres = txtNombre.Text;
             emple.Apellidos = txtApellido.Text;
@@ -138,14 +138,16 @@ namespace ProyectoNomina
                // string formatted = selectedDate2.Value.ToString("dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture);
                 emple.Fecha_Incorporacion = selectedDate2.Value;
             }
-            emple.Salario_Basico = int.Parse(txtSalarioBasico.Text);
+             emple.Salario_Basico = int.Parse(txtSalarioBasico.Text);            
             if (emple.Imagen_Perfil != null)
             {
                 emple.Imagen_Perfil = imgPhoto.Source.ToString();
             }
+
             datos.Empleado.Add(emple);
             datos.SaveChanges();
             CargarGrillaEmpleados();
+
         }
 
         private void BtnImagen_Click(object sender, RoutedEventArgs e)
