@@ -19,10 +19,11 @@ namespace ProyectoNomina
     /// </summary>
     public partial class w_Turno : Window
     {
-        NominaEntities datos;
+        NominaEntities1 datos;
         public w_Turno()
         {
             InitializeComponent();
+            datos = new NominaEntities1();
         }
 
         public void CargarGrillaTurnos()
@@ -38,7 +39,7 @@ namespace ProyectoNomina
             tur.Hora_Salida = txthorasalida.Text;
             tur.Observaciones = txtobservacion.Text;
             datos.Turno.Add(tur);
-            datos.SavesChanges();
+            datos.SaveChanges();
             CargarGrillaTurnos();
 
 
