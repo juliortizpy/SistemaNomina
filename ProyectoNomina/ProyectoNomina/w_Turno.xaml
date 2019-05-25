@@ -15,14 +15,14 @@
         <Label x:Name="lblhorasalida" Content="Hora Salida" HorizontalAlignment="Left" Margin="18,129,0,0" VerticalAlignment="Top" Grid.Column="2" Height="26" Width="71"/>
         <Label x:Name="lblobservacion" Content="Observacion" HorizontalAlignment="Left" Margin="18,177,0,0" VerticalAlignment="Top" Grid.Column="2" Height="26" Width="76"/>
         <TextBox x:Name="txtidturno" HorizontalAlignment="Left" Height="23" Margin="140,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" IsReadOnly="True" Width="120" Grid.Column="2" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="txtobservacion" HorizontalAlignment="Left" Height="23" Margin="140,177,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" IsReadOnly="True" Width="120" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtobservacion" HorizontalAlignment="Left" Height="23" Margin="140,177,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="2" Grid.ColumnSpan="2"/>
         <Button x:Name="button" Grid.Column="2" HorizontalAlignment="Left" Margin="49,241,0,0" VerticalAlignment="Top" Width="75">
             <Button x:Name="btnagregar" Content="Agregar" Width="75" Click="btnagregar_Click"/>
         </Button>
         <Button x:Name="btnlimpiar" Content="Limpiar" Grid.Column="2" HorizontalAlignment="Left" Margin="185,241,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="btnlimpiar_Click"/>
         <DataGrid x:Name="dgturno" HorizontalAlignment="Left" Margin="324,32,0,0" VerticalAlignment="Top" Height="229" Width="251"/>
-        <TextBox x:Name="txthoraentrada" HorizontalAlignment="Left" Height="23" Margin="140,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" IsReadOnly="True" Width="120"/>
-        <TextBox x:Name="txthorasalida" HorizontalAlignment="Left" Height="23" Margin="140,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" IsReadOnly="True" Width="120"/>
+        <TextBox x:Name="txthoraentrada" HorizontalAlignment="Left" Height="23" Margin="140,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txthorasalida" HorizontalAlignment="Left" Height="23" Margin="140,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
