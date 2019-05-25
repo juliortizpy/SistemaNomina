@@ -1,0 +1,16 @@
+﻿<Window x:Class="ProyectoNomina.w_Anticipos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoNomina"
+        mc:Ignorable="d"
+        Title="w_Anticipos" Height="391.29" Width="1028.662">
+    <Grid>
+        <GroupBox Header="Anticipos Solicitados" Canvas.Left="10" Canvas.Top="419" Margin="10,10,10,59">
+            <DataGrid Name="dgAnticipos" Loaded="DgAnticipos_Loaded" Margin="0,0,0,-3" Height="255" VerticalAlignment="Top" ></DataGrid>
+        </GroupBox>
+        <Button Name="BtnAprobar" Content="Aprobar" Click="BtnAprobar_Click" HorizontalAlignment="Left" Margin="365,313,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="BtnRechazar" Content="Rechazar" Click="BtnRechazar_Click" HorizontalAlignment="Left" Margin="565,313,0,0" VerticalAlignment="Top" Width="74"/>
+    </Grid>
+</Window>

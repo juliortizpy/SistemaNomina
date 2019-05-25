@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoNomina"
         mc:Ignorable="d"
-        Title="Empleados" Height="735.562" Width="800">
+        Title="Empleados" Height="735.562" Width="987.961">
     <Canvas RenderTransformOrigin="0.499,0.634" Margin="0,0,0,2">
-        <GroupBox Header="Datos del Empleado" Height="370" Canvas.Left="10" Canvas.Top="10" Width="772" RenderTransformOrigin="0.51,0.929">
+        <GroupBox Header="Datos del Empleado" Height="370" Canvas.Left="10" Canvas.Top="10" Width="957" RenderTransformOrigin="0.51,0.929">
             <Grid Margin="0,0,0,-22">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="150"></ColumnDefinition>
@@ -56,12 +56,12 @@
 
             </Grid>
         </GroupBox>
-        <GroupBox Header="Empleados Existentes" Height="227" Canvas.Left="10" Canvas.Top="419" Width="772">
+        <GroupBox Header="Empleados Existentes" Height="227" Canvas.Left="10" Canvas.Top="419" Width="957">
             <DataGrid Name="dgEmpleados" Loaded="DgEmpleados_Loaded" MouseDoubleClick="DgEmpleados_MouseDoubleClick"></DataGrid>
         </GroupBox>
-        <Button Name="btnLimpiar" Content="Limpiar" Click="BtnLimpiar_Click" Canvas.Left="150" Canvas.Top="659" Width="80"></Button>
-        <Button Name="btnEliminar" Content="Eliminar" Click="BtnEliminar_Click" Canvas.Left="250" Canvas.Top="659" Width="80"></Button>
-        <Button Name="btnModificar" Content="Modificar" Click="BtnModificar_Click" Canvas.Left="350" Canvas.Top="659" Width="80"></Button>
-        <Button Name="btnGuardar" Content="Guardar" Click="BtnGuardar_Click" Canvas.Left="450" Canvas.Top="659" Width="80"></Button>
+        <Button Name="btnLimpiar" Content="Limpiar" Click="BtnLimpiar_Click" Canvas.Left="305" Canvas.Top="664" Width="80"></Button>
+        <Button Name="btnEliminar" Content="Eliminar" Click="BtnEliminar_Click" Canvas.Left="405" Canvas.Top="664" Width="80"></Button>
+        <Button Name="btnModificar" Content="Modificar" Click="BtnModificar_Click" Canvas.Left="505" Canvas.Top="664" Width="80"></Button>
+        <Button Name="btnGuardar" Content="Guardar" Click="BtnGuardar_Click" Canvas.Left="605" Canvas.Top="664" Width="80"></Button>
     </Canvas>
 </Window>

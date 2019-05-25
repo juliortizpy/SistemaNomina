@@ -33,5 +33,21 @@ namespace ProyectoNomina
         {
                 this.Close();          
         }
+
+        private void MenuTurnos_Click(object sender, RoutedEventArgs e)
+        {
+            w_Turno ventanaTurno = new w_Turno();
+            ventanaTurno.ShowDialog();
+        }
+        private void MenuPermisos_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void MenuAnticipos_Click(object sender, RoutedEventArgs e)
+        {
+            w_Anticipos ventanaAnticipos = new w_Anticipos();
+            ventanaAnticipos.ShowDialog();
+        }
     }
 }

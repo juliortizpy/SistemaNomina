@@ -9,9 +9,10 @@
     <Grid>
         <Menu Name="MenuPrincipal" RenderTransformOrigin="0.5,0.5" Margin="0,0,16,0">
             <MenuItem Header="Opciones">
-                <MenuItem Header="Permisos"/>
+                <MenuItem Header="Permisos" Click="MenuPermisos_Click"/>
                 <MenuItem Header="Empleados" Click="MenuEmpleados_Click"/>
-                <MenuItem Header="SubMenu3" />
+                <MenuItem Header="Turnos" Click="MenuTurnos_Click" />
+                <MenuItem Header="Anticipos" Click="MenuAnticipos_Click" />
                 <MenuItem Header="Salir" Click="MenuSalir_Click" />
             </MenuItem>
         </Menu>
