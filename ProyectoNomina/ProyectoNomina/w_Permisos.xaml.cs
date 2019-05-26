@@ -41,6 +41,47 @@ namespace ProyectoNomina
             }
         }
 
-    
+
+
+
+        private void btnAprobar_Click(object sender, RoutedEventArgs e)
+        {
+            if (dgPermisos.SelectedItem != null)
+            {
+                Permisos a = (Permisos)dgPermisos.SelectedItem;
+                if (a.Estado == "Pendiente")
+                {
+                    a.Estado = "Aprobado";
+                    MessageBox.Show("Permiso Aprobado!");
+                }
+                
+                datos.SaveChanges();
+                CargarPermisos();
+            }
+            else
+                MessageBox.Show("Debe seleccionar un Permiso!");
+        }
+
+        private void btnRechazar_Click(object sender, RoutedEventArgs e)
+        {
+            if (dgPermisos.SelectedItem != null)
+            {
+                Permisos a = (Permisos)dgPermisos.SelectedItem;
+                if (a.Estado == "Pendiente")
+                {
+                    a.Estado = "Rechazado";
+                    MessageBox.Show("Permiso rechazado!");
+                }
+                datos.SaveChanges();
+                CargarPermisos();
+            }
+            else
+                MessageBox.Show("Debe seleccionar un Permiso!");
+        }
+
+        private void dgPermisos_Loaded(object sender, RoutedEventArgs e)
+        {
+            CargarPermisos();
+        }
     }
 }

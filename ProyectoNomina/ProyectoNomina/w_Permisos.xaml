@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoNomina"
         mc:Ignorable="d"
-        Title="Permisos" Height="300" Width="300">
+        Title="Permisos" Height="341.284" Width="333.028" >
     <Grid>
-        <GroupBox Header=" Permisos solicitados:" Canvas.Left="10" Canvas.Top="256" Margin="10,0">
-            <DataGrid x:Name="dgPermisos"></DataGrid>
+        <GroupBox Header=" Permisos solicitados:" Margin="0,0,0,37">
+            <DataGrid x:Name="dgPermisos" Margin="0,0,-10,-4" Loaded="dgPermisos_Loaded"></DataGrid>
         </GroupBox>
+        
+        <Button x:Name="btnAprobar" Content="Aprobar" Click="btnAprobar_Click" HorizontalAlignment="Left" Margin="160,279,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnRechazar" Content="Rechazar" Click="btnRechazar_Click" HorizontalAlignment="Left" Margin="240,279,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
