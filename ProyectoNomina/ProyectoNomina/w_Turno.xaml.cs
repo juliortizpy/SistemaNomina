@@ -51,6 +51,9 @@ namespace ProyectoNomina
             txthoraentrada.Text = string.Empty;
             txthorasalida.Text = string.Empty;
             txtobservacion.Text = string.Empty;
+
+            datos.SaveChanges();
+            CargarGrillaTurnos();
         }
     }
 }
