@@ -49,5 +49,21 @@ namespace ProyectoNomina
             w_Anticipos ventanaAnticipos = new w_Anticipos();
             ventanaAnticipos.ShowDialog();
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuVacaciones_Click(object sender, RoutedEventArgs e)
+        {
+            w_vacaciones ventanaAnticipos = new w_vacaciones();
+            ventanaAnticipos.ShowDialog();
+        }
     }
 }

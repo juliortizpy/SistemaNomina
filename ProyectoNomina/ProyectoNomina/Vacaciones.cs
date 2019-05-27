@@ -24,5 +24,11 @@ namespace ProyectoNomina
         public string Observaciones { get; set; }
     
         public virtual Empleado Empleado { get; set; }
+
+        public override int ToString()
+        {
+            return this.Empleado;
+
+        }
     }
 }
