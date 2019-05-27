@@ -23,6 +23,7 @@ namespace ProyectoNomina
         public w_Conceceptos()
         {
             InitializeComponent();
+            datos = new NominaEntities1();
         }
 
         public void CargarGrillaConceptos()
@@ -48,7 +49,7 @@ namespace ProyectoNomina
             if (dgconceptos.SelectedItem != null)
             {
                 Concepto c = (Concepto)dgconceptos.SelectedItem;
-                datos.Empleado.Remove(c);
+                datos.Concepto.Remove(c);
                 datos.SaveChanges();
                 CargarGrillaConceptos();
             }

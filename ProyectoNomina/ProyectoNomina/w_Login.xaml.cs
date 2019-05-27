@@ -23,5 +23,28 @@ namespace ProyectoNomina
         {
             InitializeComponent();
         }
+
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.Shutdown();
+            }
+
+        private void btnIngresar_Click(object sender, RoutedEventArgs e)
+        {
+            if(txtUsuario.Text == "usuario")
+            {
+                if(txtContraseña.Text == "12345")
+                {
+                    Menu Menu = new Menu();
+                    Menu.Owner = this;
+                    Menu.Show();
+                }
+            }
+        }
     }
 }

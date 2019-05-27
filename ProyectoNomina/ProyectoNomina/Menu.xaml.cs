@@ -41,13 +41,20 @@ namespace ProyectoNomina
         }
         private void MenuPermisos_Click(object sender, RoutedEventArgs e)
         {
-            
+            Permisos ventanaPermiso = new Permisos();
+            ventanaPermiso.ShowDialog();
         }
 
         private void MenuAnticipos_Click(object sender, RoutedEventArgs e)
         {
             w_Anticipos ventanaAnticipos = new w_Anticipos();
             ventanaAnticipos.ShowDialog();
+        }
+
+        private void MenuConceptos_Click(object sender, RoutedEventArgs e)
+        {
+            w_Conceceptos ventanaConceptos = new w_Conceceptos();
+            ventanaConceptos.ShowDialog();
         }
     }
 }
